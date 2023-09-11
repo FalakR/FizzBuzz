@@ -1,15 +1,12 @@
-/**
- * Solve the FizzBuzz challenge.
- */
-class FizzBuzz {
-
+public class FizzBuzzWhile {
     public static void main(String[] args) {
 
-        for (int i = 1; i < 100; i++) {
+        int u = 1;
+        while (u < 100) {
 
             // Find out which numbers divide i.
-            boolean divisibleBy3 = i % 3 == 0;
-            boolean divisibleBy5 = i % 5 == 0;
+            boolean divisibleBy3 = u % 3 == 0;
+            boolean divisibleBy5 = u % 5 == 0;
 
             // Print our appropriate result.
             if (divisibleBy3 && divisibleBy5) {
@@ -26,9 +23,11 @@ class FizzBuzz {
 
             } else {
 
-                System.out.println(i);
+                System.out.println(u);
 
             }
+
+            u += 1;
         }
     }
 }
